@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AvatarViewBadge.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+    mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="fontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="cameraicon" />
+                <On Platform="Android" Value="cameraicon.ttf" />
+                <On Platform="UWP" Value="cameraicon#cameraicon.ttf" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <badge:SfBadgeView
+                BadgeText="&#xe700;"
+                HeightRequest="65"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="65">
+                <badge:SfBadgeView.Content>
+                    <Grid>
+                        <sfavatar:SfAvatarView
+                            AvatarName="Alex"
+                            ContentType="Initials"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            WidthRequest="50" />
+                    </Grid>
+                </badge:SfBadgeView.Content>
+                <badge:SfBadgeView.BadgeSettings>
+                    <badge:BadgeSetting
+                        BadgePosition="BottomRight"
+                        FontFamily="{StaticResource fontFamily}"
+                        Offset="-5,-5" />
+                </badge:SfBadgeView.BadgeSettings>
+            </badge:SfBadgeView>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
