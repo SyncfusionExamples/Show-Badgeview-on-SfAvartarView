@@ -1,11 +1,12 @@
 # Show BadgeView on SfAvatarView
 
-This repository contains sample to show [Badge View](https://learn.microsoft.com/en-us/xamarin/community-toolkit/views/badgeview) on the [Syncfusion Xamarin.Forms Avatar View](https://help.syncfusion.com/xamarin/avatar-view/getting-started) control.
+This repository contains sample to show [Badge View](https://help.syncfusion.com/xamarin/badge-view/getting-started) on the [Syncfusion Xamarin.Forms Avatar View](https://help.syncfusion.com/xamarin/avatar-view/getting-started) control.
 
 ## Syncfusion controls:
 
 This project used the following Syncfusion control(s):
 * [SfAvatarView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-avatar-view)
+* [SfBadgeView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view)
 
 ## Supported platforms
 
